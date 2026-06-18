@@ -1,0 +1,56 @@
+{
+  "name": "ts-review-practice",
+  "version": "1.1.0",
+  "description": "TypeScript review project with public API access (Array/Object/Union/Generics/Guards/Advanced patterns + zod runtime validation)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "array": "tsx src/array-patterns.ts",
+    "object": "tsx src/object-patterns.ts",
+    "union": "tsx src/union-patterns.ts",
+    "generics": "tsx src/generics-patterns.ts",
+    "guard": "tsx src/guard-patterns.ts",
+    "advanced": "tsx src/advanced-patterns.ts",
+    "all": "tsx src/all-patterns.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "check": "npm run typecheck && npm run lint && npm run test"
+  },
+  "keywords": [
+    "typescript",
+    "practice",
+    "api",
+    "zod",
+    "vitest",
+    "eslint",
+    "prettier"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
